@@ -11,21 +11,21 @@ function Form(props) {
       console.log(formValues);
     };
     
-    return (
+      return (
         <div>
             <head>
                 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet" />
             </head>
             <form onSubmit={submitForm}>
                 <label>Name:</label>
-                <input type='text' name='name' id='name' value={formValues.name} placeholder='John Doe' minlength="5"
-                        onChange={submitForm} required />
+                <input type='text' name='name' id='name' value={formValues.name} placeholder='John Doe' 
+                        onChange={submitForm} />
                 <label>Email:</label>
-                <input type='email' name='email' id='email' value={formValues.email} placeholder='johndoe@email.com' onChange={submitForm} required />
+                <input type='email' name='email' id='email' value={formValues.email} placeholder='johndoe@email.com' onChange={submitForm} />
                 <label>Password:</label>
-                <input type='password' name='password' id='password' value={formValues.password} placeholder='***************' minlength="8" onChange={submitForm} required />
+                <input type='password' name='password' id='password' value={formValues.password} placeholder='Runner124##'  onChange={submitForm}  />
                 <a href="#">Terms of Service</a>
-                <input type='checkbox' name="checkbox" value={formValues.checkbox} onChange={submitForm} required />
+                <input type='checkbox' name="checkbox" value={formValues.checkbox} onChange={submitForm}  />
                 <button type='submit' disabled={buttonDisabled} onClick={() => submitForm} >Submit</button>
             </form>
         </div>
